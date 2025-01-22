@@ -21,15 +21,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            padding: 20px;
+            min-height: 100vh;
+            padding: 40px 20px;
         }
 
         h1 {
             font-size: clamp(1.5rem, 5vw, 2rem);
             font-weight: 600;
             margin-bottom: 20px;
-            max-width: 90%;
+            max-width: 80%;
+            word-wrap: break-word;
+            line-height: 1.5;
+            text-align: center;
         }
 
         img {
@@ -56,9 +59,10 @@
         }
 
         /* Ajuste para telas menores */
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             h1 {
                 font-size: 1.3rem;
+                max-width: 100%;
             }
 
             img {

@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Certa</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             text-align: center;
             background: linear-gradient(to right, #4CAF50, #2E8B57);
             color: white;
-            margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            padding: 20px;
         }
+
         h1 {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 5vw, 2rem);
             font-weight: 600;
             margin-bottom: 20px;
+            max-width: 90%;
         }
+
         img {
             max-width: 100%;
             width: 300px;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
+
         a {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 1.2rem;
             color: white;
             background: #1e3c72;
@@ -41,14 +50,31 @@
             border-radius: 10px;
             transition: 0.3s;
         }
+
         a:hover {
             background: #163e68;
+        }
+
+        /* Ajuste para telas menores */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            img {
+                width: 90%;
+            }
+
+            a {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Fala Jotas, fiz isso aqui pra te falar pra parar de ser viado e que a gente tem um treino de peito quinta agora, fecho?</h1>
-    <img src="jotascerto.jpeg" alt="verdadeiro jotas">
+    <img src="jotascerto.jpeg" alt="Verdadeiro Jotas">
     <a href="index.html">Voltar</a>
 </body>
 </html>
